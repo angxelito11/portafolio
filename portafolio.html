@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="portafoliostyles.css">
+</head>
+<body>        
+    <div class ="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Angel Castro</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">sobre mi</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">habilidades</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">portafolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">contacto</a></li>
+                </ul>
+            </nav>
+            <div class ="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="foto">
+                <img src="./IMG_3756.png" alt="">
+            </div>
+            <h1>ANGEL CASTRO</h1>
+            <h2>programador</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>sobre mi</h2>
+            <p><span>hola, soy Angel Castro.</span> siempre he sentido curiosidad por el mundo de las nuevas tecnologias, y creo que soy afortunado en la posibilidad de poder dedicarme a lo que en verdad me gusta, ya que siento que el campo de la tecnologias es la nueva era que nos llevara a grandes desarrollos y alcances tecnológicos y por eso me emociona poder hacer parte de una gran comunidad.</p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>edad</strong>
+                            20 años 
+                        </li>
+                        <li>
+                            <strong>telefono</strong>
+                            3217146303
+                        </li>
+                        <li>
+                            <strong>email</strong>
+                            angelcastro112003@ gamil.com 
+                        </li>
+                        <li>
+                            <strong>dirección</strong>
+                            cll 95# 71-45 Bogotá, Colombia 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                <button>
+                    descrargar cv <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+        </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>habilidades</h3>
+                    <div class="habilidades">
+                        <span>fundamentos básicos de la informatica</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>capaz de adaptarme al cambio</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>portafolio</h2>
+            <div class="galeria">
+                <div class="poryecto">
+                    <img src="./imagenespiedrapapelotijera/piedrapapelotijera.png" alt="">
+                    <div class="overlay">
+                        <h3>videojuegos</h3>
+                        <p>juego</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="tú nombre">
+                    <input type="text" placeholder="tú número">
+                    <input type="text" placeholder="correo electrónico">
+                    <input type="text" placeholder="motivo">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="mensaje"></textarea>
+                    <button>
+                        enviar mensaje
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="portafolio.js"></script>
+</body>
+</html>
